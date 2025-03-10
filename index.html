@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show</title>
+    <!-- Bootstrap CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Favicon Google -->
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- JQUERY CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="section1">
+        <!-- NAVBAR1 -->
+        <nav class="navbar">
+            <div class="navpart1">
+            <div>
+                <img src="logo.png" alt="" class="logo">
+            </div>
+            <div>
+                <input type="text" class="input" placeholder=" Search for Events, Movies, Sports, Plays, Activities">
+            </div>
+            <div class="city">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Surat
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    </ul>
+                  </div>
+            </div>
+            <div>
+                <button class="signinbtn">Sign In</button>
+            </div>
+            <div class="menubutton">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+        </nav>
+        <!-- NAVBAR2 -->
+         <nav class="navbar2">
+            <ul class="list1">
+                <li class="category">Movies</li>
+                <li class="category">Streams</li>
+                <li class="category">Activities</li>
+                <li class="category">Events</li>
+                <li class="category">Plays</li>
+                <li class="category">Sports</li>
+            </ul>
+            <ul class="list2">
+                <li class="category2">List Your shows</li>
+                <li class="category2">Corporates</li>
+                <li class="category2">Offers</li>
+                <li class="category2">Gift Card</li>
+            </ul>
+         </nav>
+         <!-- CARASOUEL1 -->
+         <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1741088209116_4thmarholipartydesktopcarousel.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1740486166821_humareramwebshowcasesurat.jpg" class= "d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1740647667059_sevenandnottinghillwebbanner.jpg" class= "d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section class="section2">
+        <div class="recommendation container">
+            <h4>Recommendated Movies</h4>
+            <p class="seeall text-danger">see all</p>
+        </div>
+    </section>
+    
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4zLzEwICAyNzEuNUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00408691-wqmumfxjtk-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4xLzEwICAxLjFLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00412372-bszwfqkltb-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny44LzEwICA1LjhLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00432204-euccgryvlj-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni42LzEwICAxNDUgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00430332-cqbbxvcjzs-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni45LzEwICAzLjVLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00430518-pbbpufjmrb-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICAyLjJLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00410899-kahkzbdeqb-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS8xMCAgNDIgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00431467-klzpdkaepe-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA1LjJLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420660-yemjtgvzze-portrait.jpg" alt="" ></div>
+          <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICA3MTggVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00434999-qfhyqzjrnd-portrait.jpg" alt="" ></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <div class="movienameslider1 container">
+        <div class="row">
+          <div class="col-2">
+            <h5>CHAVVA</h5>
+            <p>Action/Drama/Historical</p>
+          </div>
+          <div class="mickey17 col-2">
+            <h5>mickey17</h5>
+            <p>Action/Drama/Historical</p>
+          </div>
+          <div class="crazxy col-2">
+            <h5>crazxy</h5>
+            <p>Action/Drama/Historical</p>
+          </div>
+          
+        </div>
+          
+      </div>
+      <div class="stream container">
+        <img class="stream container" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png" alt="">
+      </div>
+
+      <section class="liveevents container">
+        <div class="events">
+          <h4>The Best Of Live Events</h4>
+        </div>
+        <div class="slider2">
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/upskill-collection-202211140440.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/interactive-games-collection-202211140440.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTMwKyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/adventure-fun-collection-202211140440.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-amusement-park-collection-202404190106.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTQwKyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-kids-collection-202404190106.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTcwKyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png" alt="" ></div>
+              <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTM1KyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png" alt="" ></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          </script>
+         
+          </div>
+        </div>
+
+      </section>
+      <section class="premiere">
+        <div class="premiere1"></div>
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png" alt="" class="premiere2">
+        <div class="premieres">
+          <h5>Premieres</h5>
+          <h6 class="brand">Brand New releases every friday</h6>
+        </div>
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00435561-atvelkzvjv-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00132276-erkkmefxav-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00421058-dckzpwmcaz-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00404965-nsqbfjvwkq-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00436818-dqxrxdgnbw-portrait.jpgg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00345687-gvshnjhlfl-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00401017-bhuexjawxg-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4xLzEwICA1LjJLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420660-yemjtgvzze-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICA3MTggVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00434999-qfhyqzjrnd-portrait.jpg" alt="" ></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+      </section> 
+      <section class="musicstudio">
+        <section class="section2">
+          <div class="recommendation container">
+              <h4>Your Music Studio </h4>
+              <p class="seeall text-danger">see all</p>
+          </div>
+      </section>
+      
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNSBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00430101-wkmmyruhyt-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00418200-hlhgajdmgt-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAyNyBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00435640-qsdhgagtrj-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAzIE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434734-eppnsacrzg-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyOCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436921-uraqueaubj-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00432253-gjrsqagrtq-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyIEF1Zw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436044-nnuutvedpy-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAxOSBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00435267-wtrzrprdct-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMiBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00428280-puuusxcxxy-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00435480-lyvwarnczl-portrait.jpg" alt="" ></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+        <div class="movienameslider1 container">
+          <div class="row">
+            <div class="col-2">
+              <h5>Sanam Live in <br>  Mumbai Concert</h5>
+              <p>DY PATIL STADIUM MUMBAI</p>
+            </div>
+            <div class="mickey17 col-2">
+              <h5>MARTIN GARIX WORLD'S <br>BIGGEST HOLI</h5>
+              <p>Courtyard City Mall Ghatkopar</p>
+            </div>
+            <div class="crazxy col-2">
+              <h5>Splendors Of Master</h5>
+              <p>Jamshed Baba Theatre NCPA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="outdoor">
+        <section class="section2">
+          <div class="recommendation container">
+              <h4>The Outdoor Events</h4>
+              <p class="seeall text-danger">see all</p>
+          </div>
+      </section>
+      
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00432547-crpwnthhrv-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00435834-eszbkmzrut-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434288-uxcpxdxjuu-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00428584-sqhqpywrlm-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAxMSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00417796-lxntwlqqve-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA3IEFwcg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434286-vdlxafwerx-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00428583-sscqtdwbpy-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAzMSBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434285-fvpgcjmvhb-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAxNyBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434287-txfmnfnqqs-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA2IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434290-tsdetzkbam-portrait.jpg" alt="" ></div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+        <div class="movienameslider1 container">
+          <div class="row">
+            <div class="col-2">
+              <h5>Ashwin Bhidwani Biggest SOBO's Festival</h5>
+              <p>Sophia Bhabha Theatre Panvel</p>
+            </div>
+            <div class="mickey17 col-2">
+              <h5>Tata Wpl 2025</h5>
+              <p>DY PATIL STADIUM MUMBAI</p>
+            </div>
+            <div class="crazxy col-2">
+              <h5>TATA IPL MI vs CSK</h5>
+              <p>WANKHEDE STADIUM MUMBAI</p>
+            </div>
+          </div>
+        </div>
+      </section><section class="laughter">
+        <section class="section2">
+          <div class="recommendation container">
+              <h4>Laughter Therapy</h4>
+              <p class="seeall text-danger">see all</p>
+          </div>
+      </section>
+      
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMiBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00355125-zstdxybnnt-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA0IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00435498-fabmmxzvyd-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAzMCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00331714-vbmeeulthu-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNiBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00429524-enrflsrnpr-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00429759-epzqhjdvqb-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyNSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00329412-lxabufzaqt-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00394631-ukyajxmpyc-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00415255-grtkvnytjs-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNiBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436647-yflqprygev-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyOSBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00363549-cpjfwndpxh-portrait.jpg" alt="" ></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+        <div class="movienameslider1 container">
+          <div class="row">
+            <div class="col-2">
+              <h5>Kisi Ko Batana Mat <br>Ft. Anubhav Basi</h5>
+              <p>Sri Shanmukhnanda Fine Arts : Mumbai</p>
+            </div>
+            <div class="mickey17 col-2">
+              <h5>Pune Comedy Festival 2025</h5>
+              <p>Venue To be Announced : Pune</p>
+            </div>
+            <div class="crazxy col-2">
+              <h5>Gaurav Kapoor Live</h5>
+              <p>Sri Shanmukhnanda Fine Arts : Mumbai</p>
+            </div>
+          </div>
+        </div>
+      </section><section class="popular">
+        <section class="section2">
+          <div class="recommendation container">
+              <h4>The Popular Events</h4>
+              <p class="seeall text-danger">see all</p>
+          </div>
+      </section>
+      
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00418200-hlhgajdmgt-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNSBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00430101-wkmmyruhyt-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMiBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433801-uvrrtagcla-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMyBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433265-kswatuftat-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMyBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00404569-dcbsshtkme-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyMSBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00418776-yyweedkrrb-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAyMCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00432487-gyphhveqhf-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA2IEFwcg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00349259-tftsrwbqjl-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyMSBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00424117-fmdhehdeuf-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMiBBcHIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436590-gwwltgathz-portrait.jpg" alt="" ></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+        <div class="movienameslider1 container">
+          <div class="row">
+            <div class="col-2">
+              <h5>MARTIN GARIX WORLD'S <br>BIGGEST HOLI</h5>
+              <p>Courtyard City Mall Ghatkopar</p>
+            </div>
+            <div class="mickey17 col-2">
+              <h5>Sanam Live in Concert : Mumbai</h5>
+              <p>Courtyard , R City Mall Mumbai
+              </p>
+            </div>
+            <div class="crazxy col-2">
+              <h5>Zee Cafe Hello Seoul</h5>
+              <p>Dublin Square, Pheonix Marketcity: Mumbai</p>
+            </div>
+          </div>
+        </div>
+      </section><section class="latestplays">
+        <section class="section2">
+          <div class="recommendation container">
+              <h4>The Latest Plays</h4>
+              <p class="seeall text-danger">see all</p>
+          </div>
+      </section>
+      
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAzMCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433725-tsvacygnjz-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMiBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00123114-sesrtjvgdg-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNiBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00421962-bblqyuxamg-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAzMCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00364523-dvqplvtvwc-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00421728-lcgrrzpzuj-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00407021-fxdslslwsl-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyMSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436909-vwrqwrfsxe-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00051378-sxcurcaqje-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00118818-mqkymagbqp-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyMSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00432761-tyqhgtuweq-portrait.jpg" alt="" ></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+        <div class="movienameslider1 container">
+          <div class="row">
+            <div class="col-2">
+              <h5>Ashwin Gidwani's Blame It On Bollywood </h5>
+              <p>English/Hinglish</p>
+            </div>
+            <div class="mickey17 col-2">
+              <h5>Jack And The Beanstalk- A Gigantic Musical</h5>
+              <p>English</p>
+            </div>
+            <div class="crazxy col-2">
+              <h5>Asen Me Nasen Me</h5>
+              <p>Marathi</p>
+            </div>
+          </div>
+        </div>
+      </section><section class="sports">
+        <section class="section2">
+          <div class="recommendation container">
+              <h4>Top Games & Sport Events</h4>
+              <p class="seeall text-danger">see all</p>
+          </div>
+      </section>
+      
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAzMSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00434417-xastybdexx-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00435834-eszbkmzrut-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAxNSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434291-zewyebrhen-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00435511-rvrlglkgks-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMiBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436208-fuqbtvvjyf-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAxIEFwcg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434748-wfebffswhq-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAzMCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434151-lrhyslywqp-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAyNiBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434150-fuszwjfpzv-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAzMCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00435305-gmfbrrjdcc-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAzIEFwcg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436209-rftxaktaun-portrait.jpg" alt="" ></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+        <div class="movienameslider1 container">
+          <div class="row">
+            <div class="col-2">
+              <h5>Mumbai Indians IPL-2025 </h5>
+              <p>Multiple Venues</p>
+            </div>
+            <div class="mickey17 col-2">
+              <h5>Tata Wpl 2025-Mumbai</h5>
+              <p>Multiple Venues</p>
+            </div>
+            <div class="crazxy col-2">
+              <h5>Mumbai Indian vs Delhi Captials </h5>
+              <p>Wankhede Stadium Mumbai </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="funactivities">
+        <section class="section2">
+          <div class="recommendation container">
+              <h4>Explore Fun Activities</h4>
+              <p class="seeall text-danger">see all</p>
+          </div>
+      </section>
+      
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00432547-crpwnthhrv-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00428583-sscqtdwbpy-portrait.jpg " alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00429636-mplmbspcnf-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAxMiBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00319920-teuqnzndku-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00430545-dqlzbshmsl-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436366-pvaahptnhf-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00429243-jfjjzwhhzt-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00431515-mfwkahwguy-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxMCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00022344-edljkjagbq-portrait.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAxMSBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00014607-pbdmksfphs-portrait.jpg" alt="" ></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+        <div class="movienameslider1 container">
+          <div class="row">
+            <div class="col-2">
+              <h5>Holi Color Fusion Reconnect</h5>
+              <p>Dadar Parse Colony Gymkhana: Mumbai</p>
+            </div>
+            <div class="mickey17 col-2">
+              <h5>It's Holi thing Ft. Dj Chetas </h5>
+              <p>MMRDA Grounds: Mumbai</p>
+            </div>
+            <div class="crazxy col-2">
+              <h5>Mumbai's Biggest Holi - Holi Splash 2025</h5>
+              <p>Inorbit Mall Mumbai</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <secction class="trendings">
+        <div class="trending container ">
+          <h2>Trending Searches Right Now</h2>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="item">
+                      Chhaava
+                      <span>Movies</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      MARTIN GARRIX - World's Biggest Holi
+                      <span>Events</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      ICC Mens Champions Trophy 2025 Finals (IND Vs NZ)
+                      <span>Movies</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      It's A Holi Thing Ft. DJ Chetas at MMRDA, BKC
+                      <span>Activities</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      The Phantom of the Opera
+                      <span>Plays</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      Mickey 17
+                      <span>Movies</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      Mumbai Indians - IPL 2025
+                      <span>Sports</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      Crazxy
+                      <span>Movies</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      Rang Utsav 2025 Ft. DJ Chetas at NESCO, Goregaon
+                      <span>Activities</span>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="item">
+                      Holi Party - Alibaug Beach Camping
+                      <span>Activities</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </secction>
+        
+      
+</body>
+</html>

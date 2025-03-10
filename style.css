@@ -1,0 +1,186 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.navbar
+{
+    height: 60px;
+    display: flex;
+    background-color: white;
+}
+.logo
+{
+    width: 150px;
+    margin-left: 100px;
+    height: 50px;
+}
+.input
+{
+    width: 550px;
+    height: 35px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.navpart1
+{
+    display: flex;
+
+}
+.signinbtn
+{
+    width: 70px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-style: bold;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+.btn
+{
+    background-color: none;
+    margin-left: 300px;
+}
+.menubutton
+{
+    font-size: 25px;
+    margin-left: 25px;
+}
+.navbar2
+{
+    background-color: #F5F5F5;
+    height: 40px;
+    display: flex;
+    font-size: 14px;
+}
+li{
+    list-style: none;
+}
+.list1
+{
+    display: flex;
+    gap: 20px;
+    margin-top: 7px;
+    margin-left: 84px;
+}
+.list2
+{
+    display: flex;
+    gap: 20px;
+    margin-left: 520px;
+    margin-top: 7px;
+}
+.section1
+{
+    background-color: #EBEBEB;
+    height: 425px;
+}
+.carousel
+{
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.recommendation
+{
+    display: flex;
+}
+.seeall
+{
+    margin-left: 72%;
+}
+.swiper-slide.img
+    {
+      width: 220px;
+      height: 380px;
+    }
+
+    .swiper {
+      width: 100%px;
+      height: 380px;
+      margin-top: 40px;
+      
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 380px;
+    }
+
+    .swiper-slide img {
+      display: block;  
+    }
+    .swiper-wrapper
+    {
+      height: 380px;
+      width: 220px;
+    }
+    .mickey17
+    {
+        margin-left: 220px;
+    }
+    .crazxy
+    {
+        margin-left: 230px;
+    }
+    .stream
+    {
+        width: 1300px;
+        margin-top: 50px;
+    }
+    .liveevents
+    {
+        margin-top: 50px;
+    }
+    .premiere
+    {
+        
+        height: 680px;
+        background-color: #2B3149;
+    }
+    .premiere2
+    {
+       margin-left: 60px;
+       width: 1300px;
+       height: 110px;
+       margin-top: 30px;
+    }
+    .premiere1
+    {
+        width: 100%;
+    }
+    .premieres
+    {
+        color: white;
+        margin-left: 65px;
+        margin-top: 40px;
+    }
+    .trending {
+        margin: 20px;
+    }
+     h2 {
+        margin-bottom: 20px;
+    }
+    .item {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #f8f9fa;
+    }
+   
+    
+    
